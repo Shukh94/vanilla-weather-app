@@ -61,15 +61,19 @@
         </form>
         <h1 id="city"></h1>
         <ul>
-          <li id="date"></li>
+          <li>Last updated: <span id="date"></span></li>
           <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
             <div class="d-flex">
               <div class="float-left">
-                <span class="temperature" id="temperature"></span>
-                <span class="units">°C</span>
+                <strong class="temperature" id="temperature"></strong>
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a>
+                  |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
               </div>
             </div>
           </div>

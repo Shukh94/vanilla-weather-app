@@ -29,8 +29,9 @@ li::first-letter{
 }
 
 img {
-  
-
+  width: 70px;
+  height: 70px;
+  vertical-align: middle;
 }
 
 .weather-app {
@@ -52,11 +53,18 @@ img {
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
+  vertical-align: middle;
+}
+
+.specification {
+  margin-top: 15px;
+  padding-left: 54px;
 }
 
 .units {
   position: relative;
   top: -34px;
+  vertical-align: bottom;
 }
 
 .search-form {

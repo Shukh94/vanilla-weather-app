@@ -28,6 +28,11 @@ li::first-letter{
   text-transform: capitalize;
 }
 
+img {
+  
+
+}
+
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;

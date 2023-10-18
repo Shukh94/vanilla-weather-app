@@ -29,59 +29,84 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                autocomplete="off"
-                class="form-control shadow-sm"
-              />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-form mb-3" id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  autocomplete="off"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm"
+                />
+              </div>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-              />
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temp">
+                <div class="float-left">
+                  <img src="" alt="Clear" id="icon" />
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a>
+                    |
+                    <a href="#" id="fahrenheit-link" class="fahrenheit-link"
+                      >°F</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 specification">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
             </div>
           </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li>Last updated: <span id="date"></span></li>
-          <li id="description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="d-flex weather-temp">
-              <div class="float-left">
-                <img src="" alt="Clear" id="icon"> 
-                <strong id="temperature"></strong>
-                <span class="units">
-                  <a href="#" id="celsius-link" class="active">°C</a>
-                  |
-                  <a href="#" id="fahrenheit-link" class="fahrenheit-link">°F</a>
-                </span>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 specification ">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <div class="col-12 open-source">
         <small>
-          <a href="https://github.com/Shukh94/vanilla-weather-app" target="_blank" rel="noopener">Open-source code</a>
+          <a
+            href="https://github.com/Shukh94/vanilla-weather-app"
+            target="_blank"
+            rel="noopener"
+            >Open-source code</a
+          >
           Shakila Shukla
         </small>
       </div>
